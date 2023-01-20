@@ -19,3 +19,15 @@ h2 {
   font-weight: 700;
   font-size: 72px;
 }
+
+.outputs {
+  width: 286px;
+  height: 51px;
+  background: #626262;
+  border-radius: 6px;
+}
+.box {
+  width: 286px;
+  height: 286px;
+  background: #ff9466;
+}
