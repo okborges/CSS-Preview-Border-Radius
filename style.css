@@ -8,26 +8,73 @@
 
 body {
   display: grid;
+  height: 100vh;
   place-items: center;
   background: #222222;
   font-family: 'Ubuntu Mono', monospace;
 }
+main {
+  display: grid;
+  place-items: center;
+  max-width: 32rem;
+  padding: 50px;
+}
 
-h1,
-h2 {
+h1 {
+  padding-bottom: 4.125rem;
   color: #ffe8d9;
   font-weight: 700;
-  font-size: 72px;
+  text-align: center;
+  font-size: 4.5rem;
 }
 
 .outputs {
-  width: 286px;
-  height: 51px;
+  display: grid;
+  min-width: 17.875rem;
+  min-height: 3.125rem;
+  place-items: center;
   background: #626262;
-  border-radius: 6px;
+  border-radius: 0.375rem;
+  margin-bottom: 1.875rem;
 }
+
+p {
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  gap: 12px;
+}
+
+label[for='dois'],
+label[for='quatro'] {
+  grid-column: 3;
+}
+
 .box {
-  width: 286px;
-  height: 286px;
-  background: #ff9466;
+  grid-column: 1 / 4;
+  min-width: 286px;
+  min-height: 286px;
+  background: url(/assets/frame.jpg) no-repeat;
+  background-size: cover;
+}
+
+label {
+  display: grid;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f7f7f7;
+}
+
+input {
+  max-width: 100px;
+  height: 35px;
+  background: #f7f7f7;
+  border: 1px solid #9e9e9e;
+  border-radius: 6px;
 }
